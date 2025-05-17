@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Базовые переменные — только светлая тема */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #1f2937; /* slate-800 */
+  background-color: #f9fafb; /* slate-50 */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ссылки */
+a {
+  font-weight: 500;
+  color: #4f46e5; /* indigo-600 */
+  text-decoration: none;
+}
+a:hover {
+  color: #4338ca; /* indigo-700 */
+}
+
+/* Тело */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+/* Заголовки */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827; /* gray-900 */
+}
+
+/* Кнопки */
+button {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #6366f1; /* indigo-500 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background-color: #4f46e5; /* indigo-600 */
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid #a5b4fc; /* focus ring */
+  outline-offset: 2px;
+}
